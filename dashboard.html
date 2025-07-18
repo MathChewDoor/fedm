@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="dashboard-header">
+        <h1>Indian Food Delivery Analytics Dashboard</h1>
+    </header>
+    
+    <main class="dashboard-main">
+        <section class="dashboard-charts">
+            <h2>Descriptive Analytics</h2>
+            <div class="descriptive-charts-grid">
+                <div class="chart-card" id="top-restaurants">
+                    Top 10 Restaurants by Number of Orders<br>
+                    <canvas id="topRestaurantsChart"></canvas>
+                </div>
+                <div class="chart-card" id="orders-by-subzone">
+                    Orders by Subzone (Top 15)<br>
+                    <canvas id="ordersBySubzoneChart"></canvas>
+                </div>
+                <div class="chart-card" id="distribution-of-ratings">
+                    Distribution of Ratings<br>
+                    <canvas id="distributionOfRatingsChart"></canvas>
+                </div>
+                <div class="chart-card" id="total-sales-over-time">
+                    Total Sales Over Time (Monthly)<br>
+                    <canvas id="totalSalesOverTimeChart"></canvas>
+                </div>
+                <div class="chart-card" id="daily-order-trends">
+                    Daily Order Trends<br>
+                    <canvas id="dailyOrderTrendsChart"></canvas>
+                </div>
+                <div class="chart-card" id="distribution-of-order-values">
+                    Distribution of Order Values<br>
+                    <canvas id="distributionOfOrderValuesChart"></canvas>
+                </div>
+                <div class="chart-card" id="orders-by-hour">
+                    Orders by Hour of Day<br>
+                    <canvas id="ordersByHourChart"></canvas>
+                </div>
+                <div class="chart-card" id="customer-complaints">
+                    Customer Complaints by Tag (Top 10)<br>
+                    <canvas id="customerComplaintsChart"></canvas>
+                </div>
+                <div class="chart-card" id="aov-by-subzone">
+                    Average Order Value (AOV) by Top 10 Subzone<br>
+                    <canvas id="aovBySubzoneChart"></canvas>
+                </div>
+            </div>
+            <div class="section-spacer"></div>
+            <h2>Predictive Analytics</h2>
+            <div class="predictive-charts-row">
+                <div class="chart-card">
+                    Sales Forecast (Prophet)
+                    <canvas id="salesForecastChart"></canvas>
+                </div>
+                <div class="chart-card">
+                    Sales Forecast Components
+                    <canvas id="salesForecastComponentsChart"></canvas>
+                </div>
+            </div>
+            <!-- Future predictive analytics chart(s) can go here -->
+        </section>
+    </main>
+    <script src="dashboard.js"></script>
+</body>
+</html>
